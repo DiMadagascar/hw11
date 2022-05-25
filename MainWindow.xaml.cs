@@ -124,6 +124,22 @@ namespace HW11
                 TextBox4.Text = list[0].Phone.ToString();
                 TextBox5.Text = list[0].PassportId.ToString();
             }
+            else
+            {
+                List<Clients> list = new List<Clients>();
+                list = DeserializeClientsList("listClients.xml");
+                list.OfType<Manager>().ToList();
+                TextBox1.Text = list[0].LastName;
+                TextBox2.Text = list[0].FirstName;
+                TextBox3.Text = list[0].Patronymic;
+                TextBox4.Text = list[0].Phone.ToString();
+                TextBox5.Text = list[0].PassportId.ToString();
+            }
+        }
+
+        private void Person_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }

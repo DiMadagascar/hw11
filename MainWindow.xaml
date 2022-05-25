@@ -11,7 +11,7 @@
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <ComboBox x:Name="Person"  Grid.Column="1" HorizontalAlignment="Left" Margin="60,27,0,0" VerticalAlignment="Top" Width="120" >
+        <ComboBox x:Name="Person"  Grid.Column="1" SelectedIndex="0" HorizontalAlignment="Left" Margin="60,27,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="Person_SelectionChanged" >
             <TextBlock>Консультант</TextBlock>
             <TextBlock>Менеджер</TextBlock>
             </ComboBox>
